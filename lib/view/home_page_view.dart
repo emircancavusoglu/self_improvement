@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:self_improvement/constants/app_bar.dart';
+import 'package:self_improvement/constants/theme_name/theme_names.dart';
 import 'package:self_improvement/widgets/card_widget.dart';
 
 class HomePageView extends StatelessWidget {
@@ -20,7 +21,9 @@ class HomePageView extends StatelessWidget {
       body: const Column(
         children: [
           Text(AppBarTextDaily.goodMorning),
-          CardWidgetTheme(),
+          CardWidgetTheme(themeName: ThemeNames.findPeace,),
+          CardWidgetTheme(themeName: ThemeNames.findPeace,),
+          CardWidgetTheme(themeName: ThemeNames.findPeace,),
 
         ],
       ),
