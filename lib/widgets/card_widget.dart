@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:self_improvement/color/card_widget_color.dart';
+import 'package:self_improvement/constants/style/font_style.dart';
 import 'package:self_improvement/constants/theme_name/theme_names.dart';
 
 class CardWidget extends StatelessWidget {
@@ -20,8 +22,12 @@ class CardWidgetTheme extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: Text(themeName),
       color: Colors.green,
+      child: Text(themeName, style: TextStyle(
+        color: CardColor.cardBackgroundColor,
+            fontWeight: FontStyleForCard.fontWeight,
+        fontStyle: FontStyleForCard.fontStyle
+      ),),
 
     );
   }

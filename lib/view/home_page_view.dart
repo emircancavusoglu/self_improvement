@@ -18,15 +18,25 @@ class HomePageView extends StatelessWidget {
               icon: const Icon(Icons.person))
         ],
       ),
-      body: const Column(
+      body: Column(
         children: [
-          Text(AppBarTextDaily.goodMorning),
-          CardWidgetTheme(themeName: ThemeNames.findPeace,),
-          CardWidgetTheme(themeName: ThemeNames.findPeace,),
-          CardWidgetTheme(themeName: ThemeNames.findPeace,),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(AppBarTextDaily.goodMorning),
+          ),
+          buildPadding(ThemeNames.findPeace),
+          buildPadding(ThemeNames.prestige),
+          buildPadding(ThemeNames.money),
 
         ],
       ),
     );
+  }
+
+  Padding buildPadding(themeName) {
+    return Padding(
+          padding: const EdgeInsets.all(8.0),
+      child: CardWidgetTheme(themeName: themeName),
+        );
   }
 }
