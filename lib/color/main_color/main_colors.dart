@@ -3,5 +3,5 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class BackgroundColor{
-  Color backgroundColor = const Color(0xFFC9FCE6FF);
+ static Color backgroundColor = const Color(0xFF73E5792);
 }
