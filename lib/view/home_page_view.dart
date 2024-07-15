@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:self_improvement/color/main_color/main_colors.dart';
 import 'package:self_improvement/constants/app_bar.dart';
+import 'package:self_improvement/constants/style/font_style.dart';
 import 'package:self_improvement/constants/theme_name/theme_names.dart';
 import 'package:self_improvement/widgets/card_widget.dart';
 
@@ -19,18 +20,28 @@ class HomePageView extends StatelessWidget {
         backgroundColor: AppBarColor.green,
         actions: [
           IconButton(onPressed: (){},
-              icon: const Icon(Icons.search)),
+              icon: const Icon(Icons.search,color: Colors.white,)),
           IconButton(onPressed: (){},
-              icon: const Icon(Icons.person))
+              icon: const Icon(Icons.person, color: Colors.white,))
         ],
       ),
       body: Column(
         children: [
-          const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Text(AppBarTextDaily.goodMorning),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(AppBarTextDaily.goodMorning,style:
+            TextStyleForHomePage.titleTextStyle,),
           ),
+          Container(
+            width: 20,
+            height: 20,
+            child: const Card(
+              shape: BeveledRectangleBorder(),
+              margin: EdgeInsets.all(12),
+              child: Icon(Icons.pending_actions),
 
+            ),
+          ),
           buildPadding(ThemeNames.findPeace),
           buildPadding(ThemeNames.prestige),
           buildPadding(ThemeNames.money),

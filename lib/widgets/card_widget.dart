@@ -22,7 +22,7 @@ class CardWidgetTheme extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.green,
+      color: Colors.white,
       child: Text(themeName, style: TextStyle(
         color: CardColor.cardBackgroundColor,
             fontWeight: FontStyleForCard.fontWeight,
