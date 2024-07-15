@@ -12,6 +12,7 @@ class FontStyleForCard{
 
 class TextStyleForHomePage{
    static TextStyle titleTextStyle = const TextStyle(color: Colors.white,
-   fontWeight: FontWeight.w500,
+   fontWeight: FontWeight.w700, fontSize: 30
+
    );
 }

@@ -32,14 +32,16 @@ class HomePageView extends StatelessWidget {
             child: Text(AppBarTextDaily.goodMorning,style:
             TextStyleForHomePage.titleTextStyle,),
           ),
-          Container(
-            width: 20,
-            height: 20,
-            child: const Card(
-              shape: BeveledRectangleBorder(),
-              margin: EdgeInsets.all(12),
-              child: Icon(Icons.pending_actions),
+          Center(
+            child: Container(
+              width: 320,
+              height: 250,
+              child: Card(
+                shape: BeveledRectangleBorder(),
+                margin: EdgeInsets.all(12),
+                child: Image.asset('images/symbol.png'),
 
+              ),
             ),
           ),
           buildPadding(ThemeNames.findPeace),

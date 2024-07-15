@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:self_improvement/constants/bottom_navigation/semantic_label.dart';
+import 'package:self_improvement/constants/bottom_navigation/label.dart';
 
 class BottomNavigation extends StatelessWidget {
   const BottomNavigation({super.key});
@@ -10,19 +10,23 @@ class BottomNavigation extends StatelessWidget {
     return BottomNavigationBar(
       items: [
       BottomNavigationBarItem(
-          label: '',
+        backgroundColor: Colors.blueGrey,
+          label: 'For you',
           icon:Icon(Icons.yard_outlined,
         semanticLabel: BottomNavigationKeywords.forYou,)),
       BottomNavigationBarItem(
-          label: '',
+          backgroundColor: Colors.blueGrey,
+          label: 'Themes',
           icon: Icon(Icons.explore,
         semanticLabel: BottomNavigationKeywords.explore,)),
       BottomNavigationBarItem(
-          label: '',
+          backgroundColor: Colors.blueGrey,
+          label: 'Daily Quotes',
           icon: Icon(Icons.view_day_sharp,
         semanticLabel: BottomNavigationKeywords.explore,)),
       BottomNavigationBarItem(
-          label: '',
+          backgroundColor: Colors.blueGrey,
+          label: 'Favorites',
           icon: Icon(Icons.favorite,
         semanticLabel: BottomNavigationKeywords.favorites,))
     ],
