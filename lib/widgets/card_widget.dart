@@ -24,12 +24,21 @@ class CardWidgetTheme extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-
       width: 180,
       height: 120,
       child: Card(
         color: Colors.white,
-        child: Image.asset(ImageUrl.imageSymbol)
+        child: Stack(
+            children: [
+              Center(
+                child: Image.asset(ImageUrl.imageSymbol)),
+              const Center(
+                  child: Text("Meditasyon",style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,)))
+            ],
+             )
       ),
     );
   }
