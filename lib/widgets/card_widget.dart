@@ -4,6 +4,8 @@ import 'package:self_improvement/color/card_widget_color.dart';
 import 'package:self_improvement/constants/style/font_style.dart';
 import 'package:self_improvement/constants/theme_name/theme_names.dart';
 
+import '../image/image_url.dart';
+
 class CardWidget extends StatelessWidget {
   const CardWidget({Key? key}) : super(key: key);
 
@@ -21,14 +23,14 @@ class CardWidgetTheme extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: Colors.white,
-      child: Text(themeName, style: TextStyle(
-        color: CardColor.cardBackgroundColor,
-            fontWeight: FontStyleForCard.fontWeight,
-        fontStyle: FontStyleForCard.fontStyle
-      ),),
+    return Container(
 
+      width: 180,
+      height: 120,
+      child: Card(
+        color: Colors.white,
+        child: Image.asset(ImageUrl.imageSymbol)
+      ),
     );
   }
 }
