@@ -1,9 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:self_improvement/color/card_widget_color.dart';
-import 'package:self_improvement/constants/style/font_style.dart';
-import 'package:self_improvement/constants/theme_name/theme_names.dart';
-
 import '../image/image_url.dart';
 
 class CardWidget extends StatelessWidget {

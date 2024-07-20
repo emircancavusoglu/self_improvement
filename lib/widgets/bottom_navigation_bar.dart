@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:self_improvement/constants/bottom_navigation/label.dart';
+import 'package:self_improvement/navigation/navigatorToPage.dart';
+import 'package:self_improvement/view/explore_view.dart';
 
 class BottomNavigation extends StatelessWidget {
   const BottomNavigation({super.key});
@@ -16,9 +18,10 @@ class BottomNavigation extends StatelessWidget {
         semanticLabel: BottomNavigationKeywords.forYou,)),
       BottomNavigationBarItem(
           backgroundColor: Colors.blueGrey,
-          label: 'Themes',
-          icon: Icon(Icons.explore,
-        semanticLabel: BottomNavigationKeywords.explore,)),
+          label: 'Explore',
+          icon: IconButton(onPressed: (){
+            navigatorToPage(context, const ExploreView());
+          }, icon: const Icon(Icons.explore))),
       BottomNavigationBarItem(
           backgroundColor: Colors.blueGrey,
           label: 'Daily Quotes',
